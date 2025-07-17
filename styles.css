@@ -1,0 +1,17 @@
+body, html{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --white: #F5F5F5;
+    --light-orange: #E69E4C;
+    --dark-orange: #B84900;
+    --dark-gray: #1C1F22;
+    --black: #100407;
+
+    --blue: #348CC3;
+    --navy: #043C5C;
+    --med-orange: #D98410;
+    --gray: #AAAAAA;
+}
