@@ -1,7 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter&family=Playfair+Display:wght@700&display=swap');
-body, html{
-    margin: 0;
-    padding: 0;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Playfair+Display:wght@400;700&display=swap');
+*{
+  box-sizing: border-box;
+  max-width: 100vw;
+  overflow-x: none;
 }
 
 :root{
@@ -15,4 +16,25 @@ body, html{
     --navy: #043C5C;
     --med-orange: #D98410;
     --gray: #AAAAAA;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  max-width: 100vw;
+  overflow: none;
+  background-color: var(--white);
+  color: var(--black);
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+h2 {
+  font-family: 'Playfair Display', sans-serif;
+  font-size: clamp(3rem, 5vw, 7rem);
+  margin: 0;
+  font-weight: 500;
 }
