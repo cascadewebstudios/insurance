@@ -12,9 +12,88 @@
 </head>
 
 <body>
+    <nav id="navbar">
+        <a href="../index.html">
+          <div class="nav-logo">
+            <img src="../media/icon-pl.png">
+          </div>
+        </a>
+    
+        <div class="nav-desktop-container">
+          <div class="nav-links-desktop">
+            <a href="../about.html">About</a>
+    
+            <div class="dropdown">
+                <a href="" class="dropdown-toggle">Insurance ▾</a>
+                <div class="dropdown-content">
+                    <a href="../insurances/crit-ill-ins.html">Critical Illness Insurance</a>
+                    <a href="../insurances/disability-ins.html">Disability Insurance</a>
+                    <a href="../insurances/med-travel-ins.html">Medical Travel Insurance</a>
+                    <a href="../insurances/prop-mort-ins.html">Property Mortage Insurance</a>
+                    <a href="../insurances/snr-travel-ins.html">Senior Travel Insurance</a>
+                    <a href="../insurances/supervisa-ins.html">Supervisa Insurance</a>
+                    <a href="../insurances/term-ins.html">Term Insurance</a>
+                    <a href="../insurances/travel-ins.html">Travel Insurance</a>
+                    <a href="../insurances/trip-canc-ins.html">Trip Cancellation Insurance</a>
+                </div>
+            </div>
+    
+            <div class="dropdown">
+                <a href="#" class="dropdown-toggle">Investments ▾</a>
+                <div class="dropdown-content">
+                    <a href="../investments/fhsa-inv.html">FHSA</a>
+                    <a href="../investments/resp-inv.html">RESP</a>
+                    <a href="../investments/rrsp-inv.html">RRSP</a>
+                    <a href="../investments/tfsa-inv.html">TFSA</a>
+                </div>
+            </div>
+    
+            <a href="../quote.html">Get a Quote</a>
+            <a href="../quote.html" class="contact-btn">Contact Us</a>
+          </div>
+        </div>
+    
+        <button class="nav-menu" id="hamburger">&#9776</button>
+      </nav>
+      <div class="sidebar" id="sidebar">
+        <button class="close-sidebar" id="close-sidebar">&times;</button>
+        <div class="nav-links">
+            <a href="../about.html">About</a>
+    
+            <div class="dropdown">
+                <a class="dropdown-toggle">Insurance ▾</a>
+                <div class="dropdown-content">
+                    <a href="../insurances/crit-ill-ins.html">Critical Illness Insurance</a>
+                    <a href="../insurances/disability-ins.html">Disability Insurance</a>
+                    <a href="../insurances/med-travel-ins.html">Medical Travel Insurance</a>
+                    <a href="../insurances/prop-mort-ins.html">Property Mortage Insurance</a>
+                    <a href="../insurances/snr-travel-ins.html">Senior Travel Insurance</a>
+                    <a href="../insurances/supervisa-ins.html">Supervisa Insurance</a>
+                    <a href="../insurances/term-ins.html">Term Insurance</a>
+                    <a href="../insurances/travel-ins.html">Travel Insurance</a>
+                    <a href="../insurances/trip-canc-ins.html">Trip Cancellation Insurance</a>
+                </div>
+            </div>
+    
+            <div class="dropdown">
+                <a class="dropdown-toggle">Investments ▾</a>
+                <div class="dropdown-content">
+                    <a href="../investments/fhsa-inv.html">FHSA</a>
+                    <a href="../investments/resp-inv.html">RESP</a>
+                    <a href="../investments/rrsp-inv.html">RRSP</a>
+                    <a href="../investments/tfsa-inv.html">TFSA</a>
+                </div>
+            </div>
+    
+            <a href="../visit.html">Get a Quote</a>
+            <a href="../quote.html" class="contact-btn">Contact Us</a>
+        </div>
+      </div>
 
-    <script src="investments.js"></script>
-    <script src="../script.js"></script>
+  <!--Overlay-->
+  <div id="overlay"></div>
+
+    
 
     <footer class="footer">
         <div class="footer-top">
@@ -66,6 +145,9 @@
             information.
         </div>
     </footer>
+
+    <script src="investments.js"></script>
+    <script src="../script.js"></script>
 </body>
 
 </html>
