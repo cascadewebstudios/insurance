@@ -86,11 +86,11 @@ nav a {
 }
 
 nav a:not(.contact-btn):hover{
-  border-bottom: 2px solid var(--dark-orange);
+  border-bottom: 2px solid var(--med-orange);
 }
 
 .contact-btn {
-  background-color:  var(--dark-orange);
+  background-color:  var(--med-orange);
   border: 2px solid white;
   color: var(--black);
   padding: 0.75rem 1.25rem;
@@ -101,7 +101,7 @@ nav a:not(.contact-btn):hover{
 }
 
 .contact-btn:hover {
-  background-color: var(--med-orange);
+  background-color: #e09226;
   color: var(--white);
 }
 
@@ -242,6 +242,7 @@ nav a:not(.contact-btn):hover{
     color: #222;
     font-weight: 600;
     margin: 0 auto;
+    border: 0px;
   }
 
   .sidebar .dropdown.open .dropdown-content {
@@ -273,6 +274,67 @@ nav a:not(.contact-btn):hover{
   display: block;
 }
 
+
+/* HOMEPAGE */
+/* Hero Section */
+.hero{
+  height: 90vh;
+  width: 100%;
+  background: url('media/insurance-stockpic.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 0;
+}
+
+.hero > *:not(.hero-overlay) {
+  position: relative;
+  z-index: 1;
+}
+
+.hero h1{
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2rem, 4vw, 5rem);
+  color: var(--white);
+  margin: 0px;
+  margin-top: 20vh;
+  letter-spacing: 1.5px;
+}
+
+.hero h4{
+  color: var(--white);
+  font-family: 'Inter', serif;
+  font-size: clamp(1rem, 2vw, 3rem);
+  margin-top: -0.5vh;
+  margin-bottom: 4vh;
+  font-weight: 300;
+}
+
+.hero-buttons{
+  display: flex;
+  gap: 2vw;
+}
+
+.hero a{
+  text-decoration: none;
+  color: var(--black);
+  background-color: var(--white);
+  border-radius: 15px;
+  padding: 0.65rem 1rem;
+  font-family: 'Playfair Display', sans-serif;
+  font-size: clamp(0.75rem, 1.25vw, 2rem);
+  font-weight: 600;
+}
 
 /*Footer*/
 .footer {
