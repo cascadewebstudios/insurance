@@ -434,6 +434,7 @@ nav a:not(.contact-btn):hover{
   justify-content: center;
   padding: 0.2rem 0.7rem;
   margin-bottom: 1.5vh;
+  font-size: clamp(0.75rem, 1vw, 1.5rem);
 }
 
 .section-tag p{
@@ -497,6 +498,217 @@ nav a:not(.contact-btn):hover{
     width: 47%;
   }
 
+}
+
+/* Types of Services */
+.insurance-types {
+  padding: 4vh 5vw;
+  background-color: var(--white);
+  text-align: center;
+}
+
+.insurance-types .heading {
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.insurance-types .section-tag p {
+  margin: 0;
+}
+
+.insurance-types .section-tag{
+  margin-bottom: 0px;
+}
+
+.toggle-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 4vw;
+  margin-bottom: 2rem;
+  margin-left: 2vw;
+}
+
+.toggle-buttons div {
+  padding: 0rem 0.2rem;
+  background-color: transparent;
+  cursor: pointer;
+  font-family: 'Playfair Display', serif;
+  font-weight: bold;
+  font-size: clamp(1rem, 2.5vw, 2.5rem);
+  letter-spacing: 2px;
+}
+
+.toggle-buttons div.active {
+  border-bottom: 4px solid var(--dark-orange);
+}
+
+.cards {
+  display: none;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.cards.active {
+  display: flex;
+}
+
+.cards.insurances .card {
+  width: calc(33.333% - 1rem);
+}
+
+.cards.investments .card {
+  width: calc(50% - 1rem);
+}
+
+.card {
+  background-color: #f3f3f3;
+  padding: 0.75rem;
+  border-radius: 12px;
+  font-weight: bold;
+  text-align: center;
+  border: 2px solid var(--dark-orange);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card .img-border{
+  border: 3px solid black;
+  width: fit-content;
+  border-radius: 20px;
+  padding: 0.2rem 0.4rem;
+  margin-bottom: 5%;
+}
+
+.card img{
+  width: 4vw;
+}
+
+.card p{
+  margin: 0px;
+}
+
+.card .name{
+  font-size: clamp(0.9rem, 2vw, 1rem);
+  margin-bottom: 0.5rem;
+}
+
+.card .description{
+  font-size: clamp(0.7rem, 1.25vw, 1rem);
+  font-weight: 400;
+}
+
+@media (max-width: 768px) {
+  .cards.insurances .card,
+  .cards.investments .card {
+    width: 45%;
+  }
+
+  .toggle-buttons {
+    gap: 0.75rem;
+  }
+}
+
+/* Why Get Insurance */
+.get-insurance{
+  align-items: flex-end;
+  text-align: justify;
+}
+
+/* Reviews */
+.insurance-types{
+  background-color: rgb(241, 238, 226);
+}
+
+.reviews{ 
+  display: flex;
+  background-color: rgb(241, 238, 226);
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  margin-bottom: 8vh;
+  padding: 6vh 0vh;
+}
+
+.reviews .section-tag{
+  margin-bottom: 4vh;
+}
+
+.reviews-content{
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 4vh;
+}
+
+.reviews-track{
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.reviews-row{
+  display: flex;
+  gap: 5vw;
+  width: max-content;
+  will-change: transform;
+  justify-content: flex-start;
+  height: auto;
+}
+
+.review{
+  flex: 0 0 auto;
+  height: auto;
+  width: 30vw;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  background-color: white;
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+  padding: 2% 3%;
+}
+
+.review:hover{
+  transform: scale(1.03);
+}
+
+.reviews-row:hover{
+  animation-play-state: paused;
+}
+
+.star{
+  color: gold;
+}
+
+.review-text{
+  font-size: clamp(0.7rem, 1.2vw, 1.4rem);
+  margin: 0px;
+  margin-top: 1.5vh;
+  margin-bottom: 0.5vh;
+}
+
+.review-name{
+  color: #333;
+  margin-bottom: auto;
+  font-size: clamp(0.7rem, 1vw, 1rem);
+}
+
+@keyframes scroll-left {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@media (max-width: 800px){
+  .review{
+    width: 50vw;
+  }
 }
 
 
