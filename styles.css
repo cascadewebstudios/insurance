@@ -852,7 +852,7 @@ nav a:not(.contact-btn):hover{
 /*FAQ*/
 .faq-section {
     background-color: var(--cream);
-    padding: 2rem 5vw;
+    padding: 1rem 5vw;
     padding-left: 4rem;
     padding-right: 4rem;
     font-family: 'Inter', sans-serif;

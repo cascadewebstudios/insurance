@@ -79,3 +79,42 @@
 
 
 
+/*Coverage Info*/
+.coverage-section {
+  background-color: #fff;
+  padding: 1rem 5vw;
+  font-family: 'Inter', sans-serif;
+  color: var(--black);
+  text-align: center;
+}
+
+.coverage-heading {
+  font-family: 'Playfair Display', serif;
+  font-weight: bold;
+  font-size: 2rem;
+  margin: 0rem 0 2rem;
+}
+
+.coverage-list {
+  list-style: none;
+  padding: 0;
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.coverage-list li {
+  font-size: 0.85rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  position: relative;
+  padding-left: 2rem;
+}
+
+.coverage-list i.fa-check {
+  color: var(--dark-orange);
+  position: absolute;
+  left: 0;
+  top: 0.2rem;
+  font-size: 1.3rem;
+}
