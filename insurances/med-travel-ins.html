@@ -16,7 +16,110 @@
     <script src="insurances.js"></script>
     <script src="../script.js"></script>
 
+    <section class="insurance-section">
+        <div class="badge">DESCRIPTION</div>
 
+        <div class="insurance-top">
+            <div class="insurance-text">
+                <h2>What is Medical Travel Insurance?</h2>
+                <p>
+                    insurance information. insurance information. insurance information.
+                    insurance information. insurance information. insurance information.
+                    insurance information. insurance information. insurance information.
+                </p>
+            </div>
+
+            <div class="insurance-image-wrapper">
+                <img src="airplane.jpg" alt="Medical travel discussion" />
+                <div class="image-outline"></div>
+            </div>
+        </div>
+
+        <div class="importance-bar">
+            <div class="importance-title">Importance</div>
+            <div class="divider"></div>
+            <div class="importance-text">
+                Medical travel insurance is very necessary due to many factors including
+                being healthy and being medically secure upon traveling. The majority of
+                people need it especially those who travel, whether it is frequently or
+                only once in a while.
+            </div>
+        </div>
+    </section>
+
+    <!--FAQ-->
+    <section class="faq-section">
+        <div class="badge-container">
+            <div class="centered-badge">FAQ</div>
+        </div>
+        <div class="faq-header">
+            <h2 class="faq-title">Questions</h2>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">
+                Do you do home delivery?
+                <span class="arrow">&#9662;</span>
+            </button>
+            <div class="faq-answer">
+                <p>No, we don’t offer home delivery at the moment. We serve fresh from the location!</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">
+                Does the food truck change locations?
+                <span class="arrow">&#9662;</span>
+            </button>
+            <div class="faq-answer">
+                <p>Nope! We're parked at a fixed spot so you always know where to find us.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">
+                Do you have online ordering?
+                <span class="arrow">&#9662;</span>
+            </button>
+            <div class="faq-answer">
+                <p>We don't offer online ordering just yet. Swing by and place your order in person!</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">
+                Do you accept credit cards or is it cash only?
+                <span class="arrow">&#9662;</span>
+            </button>
+            <div class="faq-answer">
+                <p>We accept both cash and card.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">
+                Is there indoor seating available?
+                <span class="arrow">&#9662;</span>
+            </button>
+            <div class="faq-answer">
+                <p>Since we’re a food truck, seating is limited to nearby outdoor spots.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">
+                Do you have vegetarian or vegan options?
+                <span class="arrow">&#9662;</span>
+            </button>
+            <div class="faq-answer">
+                <p>Absolutely! Many of our dishes are vegetarian-friendly and we’re happy to customize to make them
+                    vegan.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!--FOOTER-->
     <footer class="footer">
         <div class="footer-top">
             <div class="footer-left">
@@ -67,6 +170,20 @@
             information.
         </div>
     </footer>
+
+        <script>
+        document.querySelectorAll('.faq-question').forEach((question) => {
+            question.addEventListener('click', () => {
+                question.classList.toggle('active');
+                const answer = question.nextElementSibling;
+                if (answer.style.maxHeight) {
+                    answer.style.maxHeight = null;
+                } else {
+                    answer.style.maxHeight = answer.scrollHeight + "px";
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>

@@ -10,11 +10,12 @@
     --light-orange: #E69E4C;
     --dark-orange: #B84900;
     --dark-gray: #1C1F22;
-    --black: #100407;
+    --black: #030202;
+    --cream: #F9F5F1;
 
     --blue: #348CC3;
     --navy: #043C5C;
-    --med-orange: #D98410;
+    --must-yellow: #D98410;
     --gray: #AAAAAA;
 }
 
@@ -139,4 +140,138 @@ h2 {
 
 .developer-bar a:hover {
   color: #bbb;
+}
+
+/*Orange Bar -- importance/about/our mission*/
+
+.importance-bar {
+    background-color: var(--light-orange);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 3rem;
+    padding: 2rem;
+}
+
+.importance-title {
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    font-size: 1.25rem;
+    flex: 0 0 auto;
+    margin-right: 2rem;
+    margin-left: 2rem;
+    color: var(--black);
+}
+
+.divider {
+    width: 2px;
+    height: 100%;
+    background-color: white;
+    margin-right: 1rem;
+}
+
+.importance-text {
+    flex: 1 1 60%;
+    font-size: 0.85rem;
+    color: var(--black);
+    line-height: 1.5;
+}
+
+/*FAQ*/
+/*FAQ*/
+.faq-section {
+    background-color: var(--cream);
+    padding: 2rem 5vw;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    font-family: 'Inter', sans-serif;
+    color: black;
+}
+
+.faq-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+
+}
+
+.faq-title {
+    font-family: 'Playfair Display', sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+    margin: 0;
+
+}
+
+
+.faq-item {
+    margin-bottom: 1.5rem;
+}
+
+.faq-question {
+    width: 100%;
+    text-align: left;
+    background-color: var(--light-orange);
+    border: 2px solid var(--light-orange);
+    padding: 1rem;
+    font-size: 0.9rem;
+    cursor: pointer;
+    position: relative;
+    transition: background-color 0.2s ease;
+}
+
+.faq-question .arrow {
+    float: right;
+    transition: transform 0.3s ease;
+}
+
+.faq-answer {
+  background-color: #fff;
+  border: 1px solid var(--light-orange);
+  border-top: none;
+  padding: 0rem 1rem;
+  font-size: 0.8rem;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+
+.faq-item.open .faq-answer {
+    display: block;
+}
+
+.faq-item.open .arrow {
+    transform: rotate(180deg);
+}
+
+.centered-badge {
+    display: inline-block;
+    border: 2px solid var(--dark-orange);
+    color: var(--dark-orange);
+    font-weight: 600;
+    font-size: 0.8rem;
+    padding: 0.25rem 1.25rem;
+    border-radius: 999px;
+    margin: 2rem auto 1rem;
+    text-align: center;
+}
+.badge-container {
+    text-align: center;
+}
+
+
+
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
