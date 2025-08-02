@@ -6,3 +6,24 @@
 .hero h4{
     font-size: clamp(1.5rem, 1.5vw, 3rem);
 }
+
+.investment-section {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--white);
+    margin-bottom: 2rem;
+
+}
+
+.dif-badge {
+    display: inline-block;
+    border: 2px solid var(--dark-orange);
+    color: var(--dark-orange);
+    font-weight: 600;
+    font-size: 0.8rem;
+    padding: 0.25rem 1rem;
+    margin-top: 2rem;
+    border-radius: 999px;
+    margin-left: 2rem;
+    margin-bottom: 1.5rem;
+
+}
