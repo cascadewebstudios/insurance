@@ -72,7 +72,7 @@
 }
 
 .coverage-list.not-covered {
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 .coverage-list.not-covered i.fa-xmark {
@@ -93,7 +93,7 @@
   font-family: 'Playfair Display', serif;
   font-weight: bold;
   font-size: clamp(1.5rem, 2.25vw, 2.5rem);
-  margin: 1rem 0 2rem;
+  margin: 0rem 0 2rem;
 }
 
 .components-grid {
