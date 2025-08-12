@@ -345,14 +345,14 @@ nav a:not(.contact-btn):hover{
   background-color: var(--light-orange);
   display: flex; 
   justify-content: space-between;
-  align-items: center;
+  align-items: stretch;
 }
 
 .benefit{
   display: flex;
   align-items: center;
-  padding: 0.75rem 1rem;
-  height: 80%
+  padding: 1.2rem 1.2rem;
+  flex: 1;
 }
 
 .benefits div:not(:last-child){
@@ -400,7 +400,12 @@ nav a:not(.contact-btn):hover{
 
   .benefit img{
     width: 30px;
+    margin-bottom: 8px;
   }
+
+  .benefit-text p:nth-child(1){
+    margin-bottom: 5px;
+  } 
 }
 
 /* Choose Us Section */
@@ -603,7 +608,7 @@ nav a:not(.contact-btn):hover{
 }
 
 .card .description{
-  font-size: clamp(0.75rem, 1vw, 1.5rem);
+  font-size: clamp(0.75rem, 0.9vw, 1.5rem);
   font-weight: 400;
 }
 
