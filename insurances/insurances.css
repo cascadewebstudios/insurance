@@ -121,6 +121,12 @@
 .component-tile h3 {
   font-weight: bold;
   font-size: clamp(1rem, 1.75vw, 1.75rem);
+  margin-top: 0.5vh;
+}
+
+.component-tile img {
+  width: 25%;
+  margin: 0px;
 }
 
 .component-tile p {
