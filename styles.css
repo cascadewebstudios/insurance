@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Playfair+Display:wght@400;700&display=swap');
 *{
   box-sizing: border-box;
-  max-width: 100vw;
+  max-width: 100%;
   overflow-x: none;
 }
+
+
 
 :root{
     --white: #F5F5F5;
@@ -23,8 +25,8 @@ body,
 html {
   margin: 0;
   padding: 0;
-  width: 100vw;
-  max-width: 100vw;
+  width: 100%;
+  max-width: 100%;
   overflow: none;
   background-color: var(--white);
   color: var(--black);
@@ -266,7 +268,7 @@ nav a:not(.contact-btn):hover{
   top: 0;
   left: 0;
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 1500;
   display: none;
@@ -284,7 +286,7 @@ nav a:not(.contact-btn):hover{
   width: 100%;
   background: url('media/insurance-stockpic.jpg');
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100vw;
   background-position: center;
   display: flex;
   flex-direction: column;
@@ -412,7 +414,7 @@ nav a:not(.contact-btn):hover{
 .choose-us{
   height: auto;
   background-color: var(--white);
-  width: 100vw;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
