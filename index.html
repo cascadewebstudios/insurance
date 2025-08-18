@@ -11,373 +11,392 @@
 </head>
 
 <body>
-<!--Nav Bar-->
-  <nav id="navbar">
-    <a href="index.html">
-      <div class="nav-logo">
-        <img src="media/icon-pl.png">
-      </div>
-    </a>
+    <!--Nav Bar-->
+    <nav id="navbar">
+        <a href="index.html">
+            <div class="nav-logo">
+                <img src="media/icon-pl.png">
+            </div>
+        </a>
 
-    <div class="nav-desktop-container">
-      <div class="nav-links-desktop">
-        <a href="about.html">About</a>
+        <div class="nav-desktop-container">
+            <div class="nav-links-desktop">
+                <a href="about.html">About</a>
 
-        <div class="dropdown">
-            <a href="" class="dropdown-toggle">Insurance ▾</a>
-            <div class="dropdown-content">
-                <a href="insurances/crit-ill-ins.html">Critical Illness Insurance</a>
-                <a href="insurances/disability-ins.html">Disability Insurance</a>
-                <a href="insurances/med-travel-ins.html">Medical Travel Insurance</a>
-                <a href="insurances/prop-mort-ins.html">Property Mortage Insurance</a>
-                <a href="insurances/snr-travel-ins.html">Senior Travel Insurance</a>
-                <a href="insurances/supervisa-ins.html">Supervisa Insurance</a>
-                <a href="insurances/term-ins.html">Term Insurance</a>
-                <a href="insurances/travel-ins.html">Travel Insurance</a>
-                <a href="insurances/trip-canc-ins.html">Trip Cancellation Insurance</a>
+                <div class="dropdown">
+                    <a href="" class="dropdown-toggle">Insurance ▾</a>
+                    <div class="dropdown-content">
+                        <a href="insurances/crit-ill-ins.html">Critical Illness Insurance</a>
+                        <a href="insurances/disability-ins.html">Disability Insurance</a>
+                        <a href="insurances/med-travel-ins.html">Medical Travel Insurance</a>
+                        <a href="insurances/prop-mort-ins.html">Property Mortage Insurance</a>
+                        <a href="insurances/snr-travel-ins.html">Senior Travel Insurance</a>
+                        <a href="insurances/supervisa-ins.html">Supervisa Insurance</a>
+                        <a href="insurances/term-ins.html">Term Insurance</a>
+                        <a href="insurances/travel-ins.html">Travel Insurance</a>
+                        <a href="insurances/trip-canc-ins.html">Trip Cancellation Insurance</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <a href="#" class="dropdown-toggle">Investments ▾</a>
+                    <div class="dropdown-content">
+                        <a href="investments/fhsa-inv.html">FHSA</a>
+                        <a href="investments/resp-inv.html">RESP</a>
+                        <a href="investments/rrsp-inv.html">RRSP</a>
+                        <a href="investments/tfsa-inv.html">TFSA</a>
+                    </div>
+                </div>
+
+                <a href="quote.html">Get a Quote</a>
+                <a href="#contact-us" class="contact-btn">Contact Us</a>
             </div>
         </div>
 
-        <div class="dropdown">
-            <a href="#" class="dropdown-toggle">Investments ▾</a>
-            <div class="dropdown-content">
-                <a href="investments/fhsa-inv.html">FHSA</a>
-                <a href="investments/resp-inv.html">RESP</a>
-                <a href="investments/rrsp-inv.html">RRSP</a>
-                <a href="investments/tfsa-inv.html">TFSA</a>
+        <button class="nav-menu" id="hamburger">&#9776</button>
+    </nav>
+    <div class="sidebar" id="sidebar">
+        <button class="close-sidebar" id="close-sidebar">&times;</button>
+        <div class="nav-links">
+            <a href="about.html">About</a>
+
+            <div class="dropdown">
+                <a class="dropdown-toggle">Insurance ▾</a>
+                <div class="dropdown-content">
+                    <a href="insurances/crit-ill-ins.html">Critical Illness Insurance</a>
+                    <a href="insurances/disability-ins.html">Disability</a>
+                    <a href="insurances/med-travel-ins.html">Medical Travel</a>
+                    <a href="insurances/prop-mort-ins.html">Property Mortage</a>
+                    <a href="insurances/snr-travel-ins.html">Senior Travel</a>
+                    <a href="insurances/supervisa-ins.html">Supervisa</a>
+                    <a href="insurances/term-ins.html">Term</a>
+                    <a href="insurances/travel-ins.html">Travel</a>
+                    <a href="insurances/trip-canc-ins.html">Trip Cancellation</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <a class="dropdown-toggle">Investments ▾</a>
+                <div class="dropdown-content">
+                    <a href="investments/fhsa-inv.html">FHSA</a>
+                    <a href="investments/resp-inv.html">RESP</a>
+                    <a href="investments/rrsp-inv.html">RRSP</a>
+                    <a href="investments/tfsa-inv.html">TFSA</a>
+                </div>
+            </div>
+
+            <a href="quote.html">Get a Quote</a>
+            <a href="#contact-us">Contact Us</a>
+        </div>
+    </div>
+
+    <!--Overlay-->
+    <div id="overlay"></div>
+
+    <!--Hero Section-->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <h1>Save on Insurance</h1>
+        <h4>Most Reliable Insurance Agent</h4>
+        <div class="hero-buttons">
+            <a href="quote.html">Get a Quote</a>
+            <a href="#contact-us">Contact Us</a>
+        </div>
+    </section>
+
+    <!--Benefits Divs-->
+    <section class="benefits">
+        <div class="benefit">
+            <img src="media/stopwatch.png">
+            <div class="benefit-text">
+                <p>Fast Service</p>
+                <p>We make insurance quick and easy, and will always get back to you as soon as possible</p>
+            </div>
+        </div>
+        <div class="benefit">
+            <img src="media/saveMoney.png">
+            <div class="benefit-text">
+                <p>Unbeatable Rates</p>
+                <p>We help you get the best coverage at the most competitive prices</p>
+            </div>
+        </div>
+        <div class="benefit">
+            <img src="media/plan.png">
+            <div class="benefit-text">
+                <p>Tailored Coverage</p>
+                <p>Our policies are customized to fit your unqiue needs and lifestyle</p>
+            </div>
+        </div>
+    </section>
+
+    <!--Why Choose Us-->
+    <section class="choose-us">
+        <div class="left">
+            <div class="section-tag">
+                <p>About Us</p>
+            </div>
+            <h2>Why Choose Us?</h2>
+            <p>
+                With over 15 years of combined experience — 8 years in Canada and 7 years in India — we bring proven
+                expertise and a deep understanding of client needs. Trusted by customers for years, we’re committed to
+                providing clear, reliable insurance solutions. We offer a free, no-obligation assessment so you can
+                explore your options without pressure. Whether you’re new to insurance or reviewing your current
+                coverage, we’ll guide you with honesty, care, and professionalism.
+            </p>
+        </div>
+        <div class="right">
+            <div class="statistic">
+                <h4>15 years</h4>
+                <p>of total experience as an agent</p>
+            </div>
+            <div class="statistic">
+                <h4>200+</h4>
+                <p>clients found the perfect insurance</p>
+            </div>
+        </div>
+    </section>
+
+    <!--Types of Insurances/Investments-->
+    <section class="insurance-types">
+        <div class="heading">
+            <div class="section-tag">
+                <p>Our Services</p>
+            </div>
+        </div>
+        <div class="toggle-buttons">
+            <div id="insurance" class="active">Insurance</div>
+            <div id="investment">Investment</div>
+        </div>
+
+        <div class="cards insurances active" id="insurances">
+            <!-- 9 cards -->
+            <div class="card">
+                <div class="img-border">
+                    <img src="media/heartbeat.png">
+                </div>
+                <p class="name">Critical Illness Insurance</p>
+                <p class="description">Pays a lump sum if you're diagnosed with a serious illness such as cancer or
+                    stroke</p>
+            </div>
+            <div class="card">
+                <div class="img-border">
+                    <img src="media/disability.png">
+                </div>
+                <p class="name">Disability Insurance</p>
+                <p class="description">Provides monthly income if you are unable to work due to illness or injury</p>
+            </div>
+            <div class="card">
+                <div class="img-border">
+                    <img src="media/airplane.png">
+                </div>
+                <p class="name">Medical Travel Insurance</p>
+                <p class="description">Covers emergency medical expenses while traveling outside your province or
+                    country</p>
+            </div>
+            <div class="card">
+                <div class="img-border">
+                    <img src="media/house.png">
+                </div>
+                <p class="name">Property Mortage Insurance</p>
+                <p class="description">Pays off your mortage upon death or critical illness</p>
+            </div>
+            <div class="card">
+                <div class="img-border">
+                    <img src="media/senior.png">
+                </div>
+                <p class="name">Senior Travel Insurance</p>
+                <p class="description">Emergency medical coverage tailored for travelers over 60</p>
+            </div>
+            <div class="card">
+                <div class="img-border">
+                    <img src="media/document.png">
+                </div>
+                <p class="name">Supervisa Insurance</p>
+                <p class="description">Required medical insurance for Super Visa holders visiting Canada</p>
+            </div>
+            <div class="card">
+                <div class="img-border">
+                    <img src="media/hourglass.png">
+                </div>
+                <p class="name">Term Insurance</p>
+                <p class="description">Life insurance that covers you for a fixed period at affordable rates</p>
+            </div>
+            <div class="card">
+                <div class="img-border">
+                    <img src="media/suitcase.png">
+                </div>
+                <p class="name">Travel Insurance</p>
+                <p class="description">Protects against medical emergencies, cancellations, and travel disruptions</p>
+            </div>
+            <div class="card">
+                <div class="img-border">
+                    <img src="media/cancellation.png">
+                </div>
+                <p class="name">Trip Cancellation Insurance</p>
+                <p class="description">Reimburses prepaid travel costs if you cancel for a covered reason</p>
             </div>
         </div>
 
-        <a href="quote.html">Get a Quote</a>
-        <a href="#contact-us" class="contact-btn">Contact Us</a>
-      </div>
-    </div>
-
-    <button class="nav-menu" id="hamburger">&#9776</button>
-  </nav>
-  <div class="sidebar" id="sidebar">
-    <button class="close-sidebar" id="close-sidebar">&times;</button>
-    <div class="nav-links">
-        <a href="about.html">About</a>
-
-        <div class="dropdown">
-            <a class="dropdown-toggle">Insurance ▾</a>
-            <div class="dropdown-content">
-                <a href="insurances/crit-ill-ins.html">Critical Illness Insurance</a>
-                <a href="insurances/disability-ins.html">Disability</a>
-                <a href="insurances/med-travel-ins.html">Medical Travel</a>
-                <a href="insurances/prop-mort-ins.html">Property Mortage</a>
-                <a href="insurances/snr-travel-ins.html">Senior Travel</a>
-                <a href="insurances/supervisa-ins.html">Supervisa</a>
-                <a href="insurances/term-ins.html">Term</a>
-                <a href="insurances/travel-ins.html">Travel</a>
-                <a href="insurances/trip-canc-ins.html">Trip Cancellation</a>
+        <div class="cards investments" id="investments">
+            <div class="card">
+                <div class="img-border">
+                    <img src="media/house2.png">
+                </div>
+                <p class="name">FHSA Investment</p>
+                <p class="description">A tax-free savings plan designed to help first-time homebuyers save for a down
+                    payment</p>
+            </div>
+            <div class="card">
+                <div class="img-border">
+                    <img src="media/graduation.png">
+                </div>
+                <p class="name">RESP Investment</p>
+                <p class="description">A tax-advantaged account to save for a child's post-secondary education, with
+                    government grant support</p>
+            </div>
+            <div class="card">
+                <div class="img-border">
+                    <img src="media/senior.png">
+                </div>
+                <p class="name">RRSP Investment</p>
+                <p class="description">A retirement savings account with tax-deferred growth and contributions that
+                    reduce taxable income</p>
+            </div>
+            <div class="card">
+                <div class="img-border">
+                    <img src="media/investment.png">
+                </div>
+                <p class="name">TFSA Investment</p>
+                <p class="description">An account where your investments grow tax-free, with no tax on withdrawals</p>
             </div>
         </div>
+    </section>
 
-        <div class="dropdown">
-            <a class="dropdown-toggle">Investments ▾</a>
-            <div class="dropdown-content">
-                <a href="investments/fhsa-inv.html">FHSA</a>
-                <a href="investments/resp-inv.html">RESP</a>
-                <a href="investments/rrsp-inv.html">RRSP</a>
-                <a href="investments/tfsa-inv.html">TFSA</a>
+    <!--Why Get Insurance-->
+    <section class="choose-us why-insurance">
+        <div class="right">
+            <div class="statistic">
+                <h4>$8.5B</h4>
+                <p>lost due to lack of insurance</p>
+            </div>
+            <div class="statistic">
+                <h4>Over 75%</h4>
+                <p>of households have at least 1 insurance policy</p>
             </div>
         </div>
-
-        <a href="quote.html">Get a Quote</a>
-        <a href="#contact-us">Contact Us</a>
-    </div>
-  </div>
-
-  <!--Overlay-->
-  <div id="overlay"></div>
-
-  <!--Hero Section-->
-  <section class="hero">
-    <div class="hero-overlay"></div>
-    <h1>Save on Insurance</h1>
-    <h4>Most Reliable Insurance Agent</h4>
-    <div class="hero-buttons">
-        <a href="quote.html">Get a Quote</a>
-        <a href="#contact-us">Contact Us</a>
-    </div>
-  </section>
-
-  <!--Benefits Divs-->
-  <section class="benefits">
-    <div class="benefit">
-        <img src="media/stopwatch.png">
-        <div class="benefit-text">
-            <p>Fast Service</p>
-            <p>We make insurance quick and easy, and will always get back to you as soon as possible</p>
+        <div class="left get-insurance">
+            <div class="section-tag">
+                <p>Importance</p>
+            </div>
+            <h2>Why Get Insurance?</h2>
+            <p>
+                Insurance provides financial protection and peace of mind when life takes an unexpected turn. Whether
+                it’s safeguarding your home, vehicle, health, or business, the right coverage ensures you’re prepared
+                for accidents, losses, or unforeseen events. Without insurance, even a single incident can lead to
+                overwhelming expenses and long-term setbacks. By investing in insurance, you’re protecting not just your
+                assets, but also your future stability and the well-being of those who depend on you.
+            </p>
         </div>
-    </div>
-    <div class="benefit">
-        <img src="media/saveMoney.png">
-        <div class="benefit-text">
-            <p>Unbeatable Rates</p>
-            <p>We help you get the best coverage at the most competitive prices</p>
-        </div>
-    </div>
-    <div class="benefit">
-        <img src="media/plan.png">
-        <div class="benefit-text">
-            <p>Tailored Coverage</p>
-            <p>Our policies are customized to fit your unqiue needs and lifestyle</p>
-        </div>
-    </div>
-  </section>
-
-  <!--Why Choose Us-->
-  <section class="choose-us">
-    <div class="left">
-        <div class="section-tag">
-            <p>About Us</p>
-        </div>
-        <h2>Why Choose Us?</h2>
-        <p>
-            With over 15 years of combined experience — 8 years in Canada and 7 years in India — we bring proven expertise and a deep understanding of client needs. Trusted by customers for years, we’re committed to providing clear, reliable insurance solutions. We offer a free, no-obligation assessment so you can explore your options without pressure. Whether you’re new to insurance or reviewing your current coverage, we’ll guide you with honesty, care, and professionalism.
-        </p>
-    </div>
-    <div class="right">
-        <div class="statistic">
-            <h4>15 years</h4>
-            <p>of total experience as an agent</p>
-        </div>
-        <div class="statistic">
-            <h4>200+</h4>
-            <p>clients found the perfect insurance</p>
-        </div>
-    </div>
-  </section>
-
-  <!--Types of Insurances/Investments-->
-  <section class="insurance-types">
-  <div class="heading">
-    <div class="section-tag">
-        <p>Our Services</p>
-    </div>
-  </div>
-  <div class="toggle-buttons">
-    <div id="insurance" class="active">Insurance</div>
-    <div id="investment">Investment</div>
-  </div>
-
-  <div class="cards insurances active" id="insurances">
-    <!-- 9 cards -->
-    <div class="card">
-        <div class="img-border">
-            <img src="media/heartbeat.png">
-        </div>
-        <p class="name">Critical Illness Insurance</p>
-        <p class="description">Pays a lump sum if you're diagnosed with a serious illness such as cancer or stroke</p>
-    </div>
-    <div class="card">
-        <div class="img-border">
-            <img src="media/disability.png">
-        </div>
-        <p class="name">Disability Insurance</p>
-        <p class="description">Provides monthly income if you are unable to work due to illness or injury</p>
-    </div>
-    <div class="card">
-        <div class="img-border">
-            <img src="media/airplane.png">
-        </div>
-        <p class="name">Medical Travel Insurance</p>
-        <p class="description">Covers emergency medical expenses while traveling outside your province or country</p>
-    </div>    
-    <div class="card">
-        <div class="img-border">
-            <img src="media/house.png">
-        </div>
-        <p class="name">Property Mortage Insurance</p>
-        <p class="description">Pays off your mortage upon death or critical illness</p>
-    </div>
-    <div class="card">
-        <div class="img-border">
-            <img src="media/senior.png">
-        </div>
-        <p class="name">Senior Travel Insurance</p>
-        <p class="description">Emergency medical coverage tailored for travelers over 60</p>
-    </div>
-    <div class="card">
-        <div class="img-border">
-            <img src="media/document.png">
-        </div>
-        <p class="name">Supervisa Insurance</p>
-        <p class="description">Required medical insurance for Super Visa holders visiting Canada</p>
-    </div>
-    <div class="card">
-        <div class="img-border">
-            <img src="media/hourglass.png">
-        </div>
-        <p class="name">Term Insurance</p>
-        <p class="description">Life insurance that covers you for a fixed period at affordable rates</p>
-    </div>
-    <div class="card">
-        <div class="img-border">
-            <img src="media/suitcase.png">
-        </div>
-        <p class="name">Travel Insurance</p>
-        <p class="description">Protects against medical emergencies, cancellations, and travel disruptions</p>
-    </div>
-    <div class="card">
-        <div class="img-border">
-            <img src="media/cancellation.png">
-        </div>
-        <p class="name">Trip Cancellation Insurance</p>
-        <p class="description">Reimburses prepaid travel costs if you cancel for a covered reason</p>
-    </div>
-  </div>
-
-  <div class="cards investments" id="investments">
-    <div class="card">
-        <div class="img-border">
-            <img src="media/house2.png">
-        </div>
-        <p class="name">FHSA Investment</p>
-        <p class="description">A tax-free savings plan designed to help first-time homebuyers save for a down payment</p>
-    </div>
-    <div class="card">
-        <div class="img-border">
-            <img src="media/graduation.png">
-        </div>
-        <p class="name">RESP Investment</p>
-        <p class="description">A tax-advantaged account to save for a child's post-secondary education, with government grant support</p>
-    </div>
-    <div class="card">
-        <div class="img-border">
-            <img src="media/senior.png">
-        </div>
-        <p class="name">RRSP Investment</p>
-        <p class="description">A retirement savings account with tax-deferred growth and contributions that reduce taxable income</p>
-    </div>
-    <div class="card">
-        <div class="img-border">
-            <img src="media/investment.png">
-        </div>
-        <p class="name">TFSA Investment</p>
-        <p class="description">An account where your investments grow tax-free, with no tax on withdrawals</p>
-    </div>
-  </div>
-  </section>
-
-  <!--Why Get Insurance-->
-  <section class="choose-us why-insurance">
-    <div class="right">
-        <div class="statistic">
-            <h4>$8.5B</h4>
-            <p>lost due to lack of insurance</p>
-        </div>
-        <div class="statistic">
-            <h4>Over 75%</h4>
-            <p>of households have at least 1 insurance policy</p>
-        </div>
-    </div>
-    <div class="left get-insurance">
-        <div class="section-tag">
-            <p>Importance</p>
-        </div>
-        <h2>Why Get Insurance?</h2>
-        <p>
-            Insurance provides financial protection and peace of mind when life takes an unexpected turn. Whether it’s safeguarding your home, vehicle, health, or business, the right coverage ensures you’re prepared for accidents, losses, or unforeseen events. Without insurance, even a single incident can lead to overwhelming expenses and long-term setbacks. By investing in insurance, you’re protecting not just your assets, but also your future stability and the well-being of those who depend on you.
-        </p>
-    </div>
-  </section>
+    </section>
 
 
-<!--Reviews-->
+    <!--Reviews-->
     <section class="reviews">
         <div class="section-tag">
             <p>Reviews</p>
         </div>
         <div class="reviews-content">
             <div class="reviews-track" data-direction="right">
-            <div class="reviews-row">
-                <div class="review">
-                <span class="star">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
-                <p class="review-text">I got Supervisa insurance for my parents through Amit. It was cheaper than the market price and he is always pretty responsive.</p>
-                <p class="review-name">Haspreet H.</p>
+                <div class="reviews-row">
+                    <div class="review">
+                        <span class="star">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                        <p class="review-text">I got Supervisa insurance for my parents through Amit. It was cheaper
+                            than the market price and he is always pretty responsive.</p>
+                        <p class="review-name">Haspreet H.</p>
+                    </div>
+                    <div class="review">
+                        <span class="star">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                        <p class="review-text">I recently engaged with Amit Shahi for both travel insurance and
+                            Supervisa insurance. From the start, he demonstrated remarkable helpfulness, attentiveness,
+                            and expertise, making the entire process effortless.</p>
+                        <p class="review-name">Namiya J.</p>
+                    </div>
+                    <div class="review">
+                        <span class="star">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                        <p class="review-text">Nice experience and always genuine advice. Must try his services in
+                            insurance related matters.</p>
+                        <p class="review-name">Ravi A.</p>
+                    </div>
+                    <div class="review">
+                        <span class="star">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                        <p class="review-text">Easy to deal with, great service and had seem less process.</p>
+                        <p class="review-name">Ronitt G.</p>
+                    </div>
                 </div>
-                <div class="review">
-                <span class="star">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
-                <p class="review-text">I recently engaged with Amit Shahi for both travel insurance and Supervisa insurance. From the start, he demonstrated remarkable helpfulness, attentiveness, and expertise, making the entire process effortless.</p>
-                <p class="review-name">Namiya J.</p>
+            </div>
+    </section>
+
+    <!--Contact Us-->
+    <section id="contact-us">
+        <div class="contact-left">
+            <p class="reason">Home of Canada's Most Trusted Insurance Plans</p>
+            <div class="contact-reasons">
+                <div class="contact-reason">
+                    <img src="media/personal.png">
+                    <p>Personalized Services</p>
                 </div>
-                <div class="review">
-                <span class="star">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
-                <p class="review-text">Nice experience and always genuine advice. Must try his services in insurance related matters.</p>
-                <p class="review-name">Ravi A.</p>
+                <div class="contact-reason">
+                    <img src="media/variety.png">
+                    <p>Wide Variety of Plans</p>
                 </div>
-                <div class="review">
-                <span class="star">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
-                <p class="review-text">Easy to deal with, great service and had seem less process.</p>
-                <p class="review-name">Ronitt G.</p>
+                <div class="contact-reason">
+                    <img src="media/relaxing.png">
+                    <p>Easy and Hassle-Free</p>
+                </div>
+                <div class="contact-reason">
+                    <img src="media/peoples.png">
+                    <p>Highly Collaborative</p>
                 </div>
             </div>
         </div>
+
+        <div class="contact-right">
+            <div class="section-tag contact-badge">Contact</div>
+            <h2>Let’s Connect</h2>
+            <p>Looking for the right insurance solution? Get in touch with our team for expert guidance tailored to your
+                needs</p>
+            <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="697ed9e8-6a00-4d4f-bdbd-5117a77391dc">
+
+                <input type="hidden" name="redirect" value="https://www.cascadewebstudios.org/success.html">
+                <!--Replace URL-->
+
+                <input type="hidden" name="send-confirmation-email" value="true">
+                <input type="hidden" name="subject" value="New Message from Cascade Web Studios">
+                <input type="hidden" name="from_name" value="Cascade Web Studios">
+
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea name="message" rows="3" required></textarea>
+                </div>
+
+                <div class="form-submit">
+                    <button type="submit">Send</button>
+                </div>
+            </form>
+
+        </div>
     </section>
-
-  <!--Contact Us-->
-  <section id="contact-us">
-    <div class="contact-left">
-      <p class="reason">Home of Canada's Most Trusted Insurance Plans</p>
-      <div class="contact-reasons">
-        <div class="contact-reason">
-            <img src="media/personal.png">
-            <p>Personalized Services</p>
-        </div>
-        <div class="contact-reason">
-            <img src="media/variety.png">
-            <p>Wide Variety of Plans</p>
-        </div>
-        <div class="contact-reason">
-            <img src="media/relaxing.png">
-            <p>Easy and Hassle-Free</p>
-        </div>
-        <div class="contact-reason">
-            <img src="media/peoples.png">
-            <p>Highly Collaborative</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="contact-right">
-      <div class="section-tag contact-badge">Contact</div>
-      <h2>Let’s Connect</h2>
-      <p>Looking for the right insurance solution? Get in touch with our team for expert guidance tailored to your needs</p>
-      <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
-        <input type="hidden" name="access_key" value="697ed9e8-6a00-4d4f-bdbd-5117a77391dc">
-
-        <input type="hidden" name="redirect" value="https://www.cascadewebstudios.org/success.html"> <!--Replace URL-->
-
-        <input type="hidden" name="send-confirmation-email" value="true">
-        <input type="hidden" name="subject" value="New Message from Cascade Web Studios">
-        <input type="hidden" name="from_name" value="Cascade Web Studios">
-
-        <div class="form-group">
-          <label for="name">Name</label>
-          <input type="text" name="name" required>
-        </div>
-
-        <div class="form-group">
-          <label for="email">Email</label>
-          <input type="email" name="email" required>
-        </div>
-
-        <div class="form-group">
-          <label for="message">Message</label>
-          <textarea name="message" rows="3" required></textarea>
-        </div>
-
-        <div class="form-submit">
-          <button type="submit">Send</button>
-        </div>
-      </form>
-
-    </div>
-  </section>
 
 
     <!--Footer-->
@@ -389,6 +408,7 @@
             </div>
 
             <div class="footer-columns">
+                <!-- Navigation -->
                 <div class="footer-col">
                     <ul>
                         <li><a href="#">Home</a></li>
@@ -399,21 +419,50 @@
                     </ul>
                 </div>
 
+                <!-- Contact Info -->
                 <div class="footer-col">
                     <ul>
-                        <li><i class="fa-solid fa-location-dot"></i> address</li>
-                        <li><i class="fa-solid fa-envelope"></i> email</li>
-                        <li><i class="fa-brands fa-tiktok"></i> tiktok</li>
+                        <li>
+                            <a href="https://maps.google.com/?q=#202 - 12899 80 Ave Surrey BC V3W 0E6" target="_blank">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:investwithashahi@gmail.com">
+                                <i class="fa-solid fa-envelope"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://tiktok.com/@amitshahi.official" target="_blank">
+                                <i class="fa-brands fa-tiktok"></i>
+                            </a>
+                        </li>
                     </ul>
                 </div>
 
+                <!-- Phone + Social -->
                 <div class="footer-col">
                     <ul>
-                        <li><i class="fa-solid fa-phone"></i> phone</li>
-                        <li><i class="fa-brands fa-facebook-f"></i> facebook</li>
+                        <li>
+                            <a href="tel:+16047836771">
+                                <i class="fa-solid fa-phone"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://facebook.com/share/1JkkcBktGh" target="_blank">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://share.google/Ru05Gs6KAwrL96BBb" target="_blank">
+                                <i class="fa-brands fa-google"></i>
+                            </a>
+                        </li>
+
                     </ul>
                 </div>
             </div>
+
         </div>
 
         <div class="footer-bottom">

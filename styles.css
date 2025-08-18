@@ -1091,7 +1091,7 @@ nav a:not(.contact-btn):hover{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 8rem;
+  gap: 4rem;
   border-bottom: 1px solid #444;
   padding-bottom: 2rem;
 }
@@ -1119,7 +1119,9 @@ nav a:not(.contact-btn):hover{
   flex: 3 1 600px;
   padding-right: 8rem;
   justify-content: space-between;
-  gap: 3rem;;
+  gap: 3rem;
+  padding-left: 4rem;
+
 }
 
 
@@ -1146,7 +1148,8 @@ nav a:not(.contact-btn):hover{
 }
 
 .footer-col i {
-  font-size: 1rem;
+  font-size: 1.5rem;
+  padding-bottom: 0.7rem;
 }
 
 .footer-bottom {
@@ -1155,7 +1158,39 @@ nav a:not(.contact-btn):hover{
   margin-bottom: 1.2rem;
   font-size: 0.70rem;
   color: #ccc;
+  padding-left: 2rem;
+  padding-right: 2rem;
   line-height: 1.4;
+}
+
+@media(max-width: 768px){
+.footer-left {
+  flex: 1 1 250px;
+  padding: 0rem;
+  text-align: center;
+}
+
+.footer-left h2 {
+  font-family: 'Playfair Display', sans-serif;
+  font-size: 2rem;
+  margin: 4;
+  line-height: 1.2;
+}
+
+.footer-left p {
+  font-family: 'Inter', sans-serif;
+  margin: 0.5rem 0 0;
+}
+
+.footer-columns {
+  display: flex;
+  flex: 3 1 600px;
+  padding-right: 4rem;
+  justify-content: space-between;
+  gap: 3rem;
+  padding-left: 4rem;
+
+}
 }
 
 /*Developer Bar*/
