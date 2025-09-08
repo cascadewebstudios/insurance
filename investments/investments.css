@@ -27,3 +27,194 @@
     margin-bottom: 1.5rem;
 
 }
+
+/*Why Invest*/
+
+.components-section {
+  background-color: var(--cream);
+  padding: 4vh 5vw;
+  padding-bottom: 12vh;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  color: var(--black);
+}
+
+.components-heading {
+  font-family: 'Playfair Display', serif;
+  font-weight: bold;
+  font-size: clamp(1.5rem, 2.25vw, 2.5rem);
+  margin: 0rem 0 2rem;
+}
+
+.components-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.component-tile {
+  border: 2px solid var(--dark-orange);
+  border-radius: 8px;
+  padding: 1rem 1rem;
+  width: 360px;
+  background-color: #fff;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.component-icon {
+  font-size: 2.5rem;
+  color: var(--dark-gray);
+}
+
+.component-tile h3 {
+  font-weight: bold;
+  font-size: clamp(1rem, 1.75vw, 1.75rem);
+  margin-top: 0.5vh;
+}
+
+.component-tile img {
+  width: 25%;
+  margin: 0px;
+}
+
+.component-tile p {
+  font-size: clamp(0.75rem, 1vw, 1.25rem);
+  line-height: 1.5;
+}
+
+/*Overview*/
+.rrsp-section {
+  text-align: center;
+  margin: 2rem auto;
+  max-width: 90%;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;  
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.tab {
+  cursor: pointer;
+  font-size: 1rem;
+  position: relative;
+  padding-bottom: 0.25rem;
+  transition: color 0.2s;
+}
+
+.tab.active {
+  font-weight: bold;
+  border-bottom: 3px solid var(--dark-orange);
+}
+
+.tab-content {
+  text-align: left;
+}
+
+.tab-pane {
+  display: none;
+}
+
+.tab-pane.active {
+  display: block;
+}
+
+.tab-pane ul {
+  list-style: none;
+  padding: 0;
+}
+
+.tab-pane li {
+  margin: 1rem 0;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  font-size: 0.8rem !important;
+  line-height: 1.4;
+}
+
+.tab-pane i {
+  flex-shrink: 0;
+  margin-top: 0.2rem;
+  font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+  .overview-btn {
+    font-size: 0.9rem;
+    padding: 0.4rem 1rem;
+  }
+
+  .tabs {
+    gap: 1rem;
+    font-size: 0.9rem;
+  }
+
+  .tab-pane li {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .tabs {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+  }
+
+  .tab {
+    font-size: 1rem;
+  }
+
+  .tab-pane li {
+    font-size: 0.85rem;
+  }
+}
+
+/*Why Choose Us*/
+.why-choose {
+  background-color: var(--black); 
+  padding: 2rem;
+  color: #fff;
+}
+
+.why-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.why-image {
+  flex: 1 1 350px;
+  max-width: 450px;
+}
+
+.why-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  border: 2px solid var(--dark-orange); 
+}
+
+.why-text {
+  flex: 1 1 350px;
+  max-width: 500px;
+}
+
+.why-text h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.why-text p {
+  line-height: 1.6;
+  font-size: 0.7rem;
+}
