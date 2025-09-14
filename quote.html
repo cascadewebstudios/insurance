@@ -48,7 +48,7 @@
             </div>
     
             <a href="quote.html">Get a Quote</a>
-            <a href="index.html#contact-us" class="contact-btn">Contact Us</a>
+            <a href="quote.html" class="contact-btn">Contact Us</a>
           </div>
         </div>
     
@@ -84,8 +84,8 @@
                 </div>
             </div>
     
-            <a href="quote.html">Get a Quote</a>
-            <a href="index.html#contact-us">Contact Us</a>
+            <a href="visit.html">Get a Quote</a>
+            <a href="quote.html" class="contact-btn">Contact Us</a>
         </div>
       </div>
     
@@ -99,9 +99,44 @@
         <h4>Save on Insurance</h4>
     </section>
 
+<!-- ✅ Quote Form Section -->
+<form class="quote-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+  <!-- Contact Info -->
+  <input type="text" name="name" placeholder="Full Name" required>
+  <input type="email" name="email" placeholder="Email Address" required>
+  <input type="tel" name="phone" placeholder="Phone Number" required>
+
+  <!-- Coverage Details -->
+  <select name="insurance-type" required>
+    <option value="">Select Insurance Type</option>
+    <option value="travel">Travel Insurance</option>
+    <option value="term">Term Life Insurance</option>
+    <option value="critical">Critical Illness Insurance</option>
+  </select>
+
+  <input type="number" name="age" placeholder="Your Age" required>
+  <input type="date" name="start-date" required>
+
+  <!-- Notes -->
+  <textarea name="notes" placeholder="Additional Notes (optional)"></textarea>
+
+  <!-- Consent -->
+  <label class="consent">
+    <input type="checkbox" name="consent" required>
+    I agree to be contacted regarding my insurance quote.
+  </label>
+
+  <!-- Submit -->
+  <button type="submit">Get My Quote</button>
+</form>
+<!-- ✅ End Quote Form Section -->
+
+
+
+
+
     <script src="script.js"></script>
 
-    <!--Footer-->
     <footer class="footer">
         <div class="footer-top">
             <div class="footer-left">
@@ -110,7 +145,6 @@
             </div>
 
             <div class="footer-columns">
-                <!-- Navigation -->
                 <div class="footer-col">
                     <ul>
                         <li><a href="#">Home</a></li>
@@ -121,50 +155,21 @@
                     </ul>
                 </div>
 
-                <!-- Contact Info -->
                 <div class="footer-col">
                     <ul>
-                        <li>
-                            <a href="https://maps.google.com/?q=#202 - 12899 80 Ave Surrey BC V3W 0E6" target="_blank">
-                                <i class="fa-solid fa-location-dot"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="mailto:investwithashahi@gmail.com">
-                                <i class="fa-solid fa-envelope"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="http://tiktok.com/@amitshahi.official" target="_blank">
-                                <i class="fa-brands fa-tiktok"></i>
-                            </a>
-                        </li>
+                        <li><i class="fa-solid fa-location-dot"></i> address</li>
+                        <li><i class="fa-solid fa-envelope"></i> email</li>
+                        <li><i class="fa-brands fa-tiktok"></i> tiktok</li>
                     </ul>
                 </div>
 
-                <!-- Phone + Social -->
                 <div class="footer-col">
                     <ul>
-                        <li>
-                            <a href="tel:+16047836771">
-                                <i class="fa-solid fa-phone"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://facebook.com/share/1JkkcBktGh" target="_blank">
-                                <i class="fa-brands fa-facebook-f"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://share.google/Ru05Gs6KAwrL96BBb" target="_blank">
-                                <i class="fa-brands fa-google"></i>
-                            </a>
-                        </li>
-
+                        <li><i class="fa-solid fa-phone"></i> phone</li>
+                        <li><i class="fa-brands fa-facebook-f"></i> facebook</li>
                     </ul>
                 </div>
             </div>
-
         </div>
 
         <div class="footer-bottom">
