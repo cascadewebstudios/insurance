@@ -1381,7 +1381,7 @@ nav a:not(.contact-btn):hover{
   padding: 0.75rem;
   border: 1px solid var(--gray);
   border-radius: 8px;
-  font-size: 1rem;
+  font-size: 0.8rem;
   width: 100%;
 }
 
@@ -1391,7 +1391,7 @@ nav a:not(.contact-btn):hover{
 }
 
 .quote-form button {
-  background-color: var(--med-orange);
+  background-color: var(--dark-orange);
   color: var(--white);
   padding: 0.75rem;
   border: none;
@@ -1403,14 +1403,14 @@ nav a:not(.contact-btn):hover{
 }
 
 .quote-form button:hover {
-  background-color: var(--dark-orange);
+  background-color: var(--gray);
 }
 
 .quote-form .consent {
   display: flex;
-  align-items: center;   /* vertically centers checkbox + text */
-  gap: 0.5rem;           /* small space between box and text */
-  font-size: 0.9rem;
+  align-items: center;   
+  gap: 0.5rem;       
+  font-size: 0.6rem;
   line-height: 1.4;
   color: var(--black);
 }
@@ -1418,7 +1418,7 @@ nav a:not(.contact-btn):hover{
 .quote-form .consent input[type="checkbox"] {
   width: 16px;
   height: 16px;
-  accent-color: var(--med-orange); /* makes checkbox orange instead of blue */
+  accent-color: var(--dark-orange); 
 }
 
 
