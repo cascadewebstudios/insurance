@@ -286,7 +286,7 @@ nav a:not(.contact-btn):hover{
   width: 100%;
   background: url('media/insurance-stockpic.jpg');
   background-repeat: no-repeat;
-  background-size: 100vw;
+  background-size: cover;
   background-position: center;
   display: flex;
   flex-direction: column;
