@@ -1421,6 +1421,89 @@ nav a:not(.contact-btn):hover{
   accent-color: var(--dark-orange); 
 }
 
+/* Partners Section */
+.partners {
+  background-color: white;
+  height: 30vh;
+  padding: 4vh 0;
+  margin: 2rem 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.partners h2{
+  font-size: clamp(1.5rem, 3vw, 2.5rem);
+  margin-left: 4vw;
+  padding-right: 3vw;
+}
+
+.partners .section-title{
+  border-right: 2px solid lightgray;
+  height: 25vh;
+  display: flex;
+  align-items: center;
+}
+
+.partners-container {
+  width: 70vw;
+  overflow: hidden;
+  position: relative;
+  background-color: white;
+  padding: 1rem 0;
+}
+
+.partners-track {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  animation: scroll-partners 30s linear infinite;
+  width: calc(200% + 6rem);
+}
+
+.partners-track:hover {
+  animation-play-state: paused;
+}
+
+.partners-track img {
+  height: 60px;
+  width: auto;
+  max-width: 120px;
+  object-fit: contain;
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+}
+
+.partners-track img:hover {
+  transform: scale(1.05);
+}
+
+@keyframes scroll-partners {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 768px) {
+  .partners-container {
+    width: 95vw;
+  }
+  
+  .partners-track {
+    gap: 2rem;
+  }
+  
+  .partners-track img {
+    height: 40px;
+    max-width: 80px;
+  }
+}
+
 
 
 
