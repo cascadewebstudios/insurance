@@ -132,3 +132,40 @@ tracks.forEach(track => {
     requestAnimationFrame(step);
   });
 });
+
+/* Partners Scrolling JS */
+document.addEventListener('DOMContentLoaded', () => {
+  const partnersContainer = document.querySelector('.partners-container');
+  
+  if (partnersContainer) {
+    let isScrolling = false;
+    
+    // Enable horizontal scroll with mouse wheel
+    partnersContainer.addEventListener('wheel', (e) => {
+      if (Math.abs(e.deltaY) > Math.abs(e.deltaX)) {
+        e.preventDefault();
+        partnersContainer.scrollLeft += e.deltaY;
+      }
+    });
+    
+    // Add smooth scrolling
+    partnersContainer.style.scrollBehavior = 'smooth';
+    
+    // Make container horizontally scrollable
+    partnersContainer.style.overflowX = 'auto';
+    partnersContainer.style.overflowY = 'hidden';
+    
+    // Hide scrollbar but keep functionality
+    const style = document.createElement('style');
+    style.textContent = `
+      .partners-container::-webkit-scrollbar {
+        display: none;
+      }
+      .partners-container {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+    `;
+    document.head.appendChild(style);
+  }
+});
