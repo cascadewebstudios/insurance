@@ -397,6 +397,81 @@
         </div>
     </section>
 
+    <!--DUMMY JOB APPLICATION FORM-->
+    <section id="contact-us">
+        <div class="contact-right">
+            <div class="section-tag contact-badge">Apply</div>
+            <h2>Let’s Connect</h2>
+            <p>Looking for the right insurance job? Fill this form to be considered.</p>
+            <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="55127c52-a8c3-457b-9ed7-c7e058b0c73c">
+                <input type="hidden" name="redirect" value="success.html">
+                <input type="hidden" name="send-confirmation-email" value="true">
+                <input type="hidden" name="subject" value="New Message from Cascade Web Studios">
+                <input type="hidden" name="from_name" value="Cascade Web Studios">
+
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" name="phone" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="city">City</label>
+                    <input type="text" name="city" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="province">Province</label>
+                    <input type="text" name="province" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="llqp">Are you LLQP certified?</label>
+                    <select name="llqp" required>
+                        <option value="">Select</option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="work_authorized">Are you legally authorized to work in Canada?</label>
+                    <select name="work_authorized" required>
+                        <option value="">Select</option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Why do you want to join us?</label>
+                    <textarea name="message" rows="3" required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="resume">Attach Resume</label>
+                    <input type="file" name="resume" accept=".pdf,.doc,.docx" />
+                </div>
+
+                <div class="form-submit">
+                    <button type="submit">Send</button>
+                </div>
+            </form>
+
+
+        </div>
+    </section>
+
     <!--Partners-->
     <section class="partners">
         <div class="section-title">

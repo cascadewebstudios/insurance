@@ -1019,6 +1019,55 @@ nav a:not(.contact-btn):hover {
   background-color: white;
 }
 
+.contact-form select {
+  padding: 0.7rem 0.5rem;
+  border: 1px solid var(--gray);
+  background-color: var(--cream);
+  border-radius: 4px;
+  font-size: 0.6rem;
+  color: var(--black); 
+  font-family: 'Inter', sans-serif;
+  appearance: none; 
+  cursor: pointer;
+}
+
+.contact-form select:focus {
+  outline: none;
+  border-color: var(--black);}
+
+.contact-form select {
+  background-image: url("data:image/svg+xml,%3Csvg fill='%23000' height='16' viewBox='0 0 24 24' width='16' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.5rem center;
+  background-size: 1rem;
+}
+
+.contact-form input[type="file"] {
+  padding: 0.5rem 0.5rem;
+  border: 1px solid var(--gray);
+  background-color: var(--cream);
+  border-radius: 4px;
+  font-size: 0.6rem;
+  color: var(--black);
+  font-family: 'Inter', sans-serif;
+  cursor: pointer;
+}
+
+.contact-form input[type="file"]::-webkit-file-upload-button {
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--gray);
+  background-color: var(--cream);
+  border-radius: 4px;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.6rem;
+  cursor: pointer;
+}
+
+.contact-form input[type="file"]:focus {
+  outline: none;
+  border-color: var(--black);
+}
+
 
 @media (max-width: 900px) {
   #contact-section {
