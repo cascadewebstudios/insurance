@@ -1673,7 +1673,9 @@ nav a:not(.contact-btn):hover {
 /* Future Section */
 .future-work {
   background-color: var(--cream);
-  padding: 4vh 12vw;
+  padding: 2vh;
+  padding-left: 3rem;
+  padding-bottom: 2rem;
 }
 
 .future-grid {
@@ -1684,34 +1686,34 @@ nav a:not(.contact-btn):hover {
 }
 
 .future-text h2 {
-  font-size: clamp(1.5rem, 2.5vw, 2.25rem); /* smaller + responsive */
-  max-width: 22ch; /* keeps it to ~2 lines */
-  line-height: 1.2; /* tighter spacing */
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  max-width: 22ch; 
+  line-height: 1.2; 
   font-weight: 700;
   color: #1c1c1c;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 .future-text p {
-  font-size: 1.1rem;
-  color: #555;
+  font-size: 1rem;
+  color: var(--black);
   margin-bottom: 1.5rem;
-  max-width: 500px;
 }
 
 .future-btn {
   display: inline-block;
-  background: #1a4eb5; /* Blue button */
-  color: #fff;
+  background: var(--light-orange); 
+  color: black;
   padding: 0.9rem 2rem;
-  border-radius: 8px;
+  border-radius: 40px;
   text-decoration: none;
   font-weight: bold;
   transition: background 0.3s ease;
 }
 
 .future-btn:hover {
-  background: #0d3488;
+  background: var(--gray);
 }
 
 .future-media {
@@ -1742,6 +1744,32 @@ nav a:not(.contact-btn):hover {
   margin-bottom: 0.5rem;
 }
 
+.future-image-wrapper {
+  position: relative;
+  flex: 1 1 35%;
+  max-width: 300px;
+  margin-left: 12rem;
+}
+
+.future-image-wrapper img {
+  width: 100%;
+  border-radius: 1rem;
+  position: relative;
+  z-index: 2;
+}
+
+.future-image-wrapper .image-outline {
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+  width: 100%;
+  height: 100%;
+  border: 2px solid var(--dark-orange);
+  border-radius: 1rem;
+  z-index: 1;
+}
+
+
 /* Purpose Section */
 .purpose-career {
   background-color: var(--cream);
@@ -1750,7 +1778,7 @@ nav a:not(.contact-btn):hover {
 }
 
 .purpose-content h2 {
-  font-size: clamp(2rem, 4vw, 3rem);
+  font-size: 2rem;
   font-weight: 700;
   color: #1c1c1c;
   margin-bottom: 1rem;
@@ -1758,23 +1786,23 @@ nav a:not(.contact-btn):hover {
 
 .purpose-content p {
   font-size: 1.1rem;
-  color: #555;
+  color: var(--black);
   margin-bottom: 2rem;
 }
 
 .purpose-btn {
   display: inline-block;
-  background: #1a4eb5;
-  color: #fff;
+  background: var(--light-orange); 
+  color: black;
   padding: 0.9rem 2rem;
-  border-radius: 8px;
+  border-radius: 40px;
   text-decoration: none;
   font-weight: bold;
   transition: background 0.3s ease;
 }
 
 .purpose-btn:hover {
-  background: #0d3488;
+  background: var(--gray);
 }
 
 .future-media {
