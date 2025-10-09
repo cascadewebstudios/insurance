@@ -178,6 +178,10 @@ nav a:not(.contact-btn):hover {
 /* Mobile view adjustments */
 @media (max-width: 800px) {
 
+    body {
+    overflow-x: hidden;
+  }
+
   .nav-links-desktop,
   .nav-button-desktop {
     display: none;
@@ -214,8 +218,10 @@ nav a:not(.contact-btn):hover {
   .sidebar {
     position: fixed;
     top: 0;
-    right: -40vw;
-    width: 40vw;
+    right: -100%;
+    width: 80%;
+    max-width: 300px;
+    box-sizing: border-box;
     height: 100%;
     background-color: rgba(255, 255, 255);
     padding: 2rem 1rem;
@@ -1261,6 +1267,7 @@ nav a:not(.contact-btn):hover {
 }
 
 @media(max-width: 768px) {
+
   .footer-columns {
     flex-wrap: nowrap;
   }
@@ -1291,8 +1298,9 @@ nav a:not(.contact-btn):hover {
     flex: 3 1 600px;
     padding-right: 4rem;
     justify-content: space-between;
-    gap: 3rem;
-    padding-left: 4rem;
+    gap: 1rem;
+    padding-left: 2rem;
+    
 
   }
 
