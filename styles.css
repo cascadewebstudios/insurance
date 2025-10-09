@@ -489,6 +489,7 @@ nav a:not(.contact-btn):hover {
 
 .choose-us p {
   font-size: clamp(0.75rem, 1vw, 1.5rem);
+  
 }
 
 .choose-us .statistic {

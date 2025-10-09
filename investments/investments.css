@@ -186,7 +186,7 @@
 .why-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem;
+  gap: 3rem;
   align-items: center;
   justify-content: center;
 }
@@ -205,7 +205,8 @@
 
 .why-text {
   flex: 1 1 350px;
-  max-width: 500px;
+  text-align: right;
+  padding-right: 2rem;
 }
 
 .why-text h2 {
@@ -217,4 +218,12 @@
 .why-text p {
   line-height: 1.6;
   font-size: 0.7rem;
+}
+
+@media (max-width: 768px) {
+  .why-text{
+    text-align: center;
+      padding-right: 0rem;
+
+  }
 }
