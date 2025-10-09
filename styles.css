@@ -24,16 +24,16 @@
   --must-yellow: #D98410;
   --gray: #AAAAAA;
   /*BLUE*/
-    --light-orange: #348CC3;
-    --dark-orange: #043C5C;
-    --cream: #d7d6e4;
+  --light-orange: #348CC3;
+  --dark-orange: #043C5C;
+  --cream: #d7d6e4;
 
   /*GREEN 
     --light-orange: #588157;
     --dark-orange: #2c4931;
     --cream: #dde9c3;
 */
-/*Blue yellow
+  /*Blue yellow
     --light-orange: #D98410;
     --dark-orange: #043C5C;
     --cream: #F9F5F1;
@@ -178,7 +178,7 @@ nav a:not(.contact-btn):hover {
 /* Mobile view adjustments */
 @media (max-width: 800px) {
 
-    body {
+  body {
     overflow-x: hidden;
   }
 
@@ -489,7 +489,7 @@ nav a:not(.contact-btn):hover {
 
 .choose-us p {
   font-size: clamp(0.75rem, 1vw, 1.5rem);
-  
+
 }
 
 .choose-us .statistic {
@@ -1032,15 +1032,16 @@ nav a:not(.contact-btn):hover {
   background-color: var(--cream);
   border-radius: 4px;
   font-size: 0.6rem;
-  color: var(--black); 
+  color: var(--black);
   font-family: 'Inter', sans-serif;
-  appearance: none; 
+  appearance: none;
   cursor: pointer;
 }
 
 .contact-form select:focus {
   outline: none;
-  border-color: var(--black);}
+  border-color: var(--black);
+}
 
 .contact-form select {
   background-image: url("data:image/svg+xml,%3Csvg fill='%23000' height='16' viewBox='0 0 24 24' width='16' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
@@ -1203,10 +1204,9 @@ nav a:not(.contact-btn):hover {
   flex-wrap: nowrap;
   padding-right: 8rem;
   justify-content: space-between;
-  align-items: stretch!important;
+  align-items: stretch !important;
   gap: 3rem;
   padding-left: 4rem;
-  
 
 }
 
@@ -1248,7 +1248,7 @@ nav a:not(.contact-btn):hover {
 }
 
 .address-block {
-  align-items: flex-start!important;
+  align-items: flex-start !important;
 }
 
 .address-list {
@@ -1271,11 +1271,17 @@ nav a:not(.contact-btn):hover {
 
   .footer-columns {
     flex-wrap: nowrap;
+    gap: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    justify-content: space-between;
   }
+
   .footer-col {
-  flex: 1 1 0;            
-  min-width: 0;            
-}
+    flex: 1 1 0;
+    min-width: 0;
+  }
+
   .footer-left {
     flex: 1 1 250px;
     padding: 0rem;
@@ -1301,12 +1307,12 @@ nav a:not(.contact-btn):hover {
     justify-content: space-between;
     gap: 1rem;
     padding-left: 2rem;
-    
+
 
   }
 
-  
-  
+
+
 }
 
 /*Developer Bar*/
@@ -1551,13 +1557,13 @@ nav a:not(.contact-btn):hover {
   justify-content: space-between;
 }
 
-.partners h2{
+.partners h2 {
   font-size: clamp(1.5rem, 3vw, 2.5rem);
   margin-left: 4vw;
   padding-right: 3vw;
 }
 
-.partners .section-title{
+.partners .section-title {
   border-right: 2px solid lightgray;
   height: 25vh;
   display: flex;
@@ -1601,6 +1607,7 @@ nav a:not(.contact-btn):hover {
   0% {
     transform: translateX(0);
   }
+
   100% {
     transform: translateX(-50%);
   }
@@ -1610,11 +1617,11 @@ nav a:not(.contact-btn):hover {
   .partners-container {
     width: 95vw;
   }
-  
+
   .partners-track {
     gap: 2rem;
   }
-  
+
   .partners-track img {
     height: 40px;
     max-width: 80px;
@@ -1697,8 +1704,8 @@ nav a:not(.contact-btn):hover {
 .future-text h2 {
   font-size: 1.5rem;
   margin-top: 2rem;
-  max-width: 22ch; 
-  line-height: 1.2; 
+  max-width: 22ch;
+  line-height: 1.2;
   font-weight: 700;
   color: #1c1c1c;
   margin-bottom: 2rem;
@@ -1712,7 +1719,7 @@ nav a:not(.contact-btn):hover {
 
 .future-btn {
   display: inline-block;
-  background: var(--light-orange); 
+  background: var(--light-orange);
   color: black;
   padding: 0.9rem 2rem;
   border-radius: 40px;
@@ -1801,7 +1808,7 @@ nav a:not(.contact-btn):hover {
 
 .purpose-btn {
   display: inline-block;
-  background: var(--light-orange); 
+  background: var(--light-orange);
   color: black;
   padding: 0.9rem 2rem;
   border-radius: 40px;
@@ -1815,15 +1822,21 @@ nav a:not(.contact-btn):hover {
 }
 
 .future-media {
-  display: flex;              /* use flex instead of grid */
-  justify-content: center;    /* center horizontally */
-  align-items: center;        /* center vertically */
+  display: flex;
+  /* use flex instead of grid */
+  justify-content: center;
+  /* center horizontally */
+  align-items: center;
+  /* center vertically */
 }
 
 .future-media img {
-  width: 100%;                /* take full column width */
-  max-width: 500px;           /* but don’t stretch too big */
-  height: auto;               /* keep aspect ratio */
+  width: 100%;
+  /* take full column width */
+  max-width: 500px;
+  /* but don’t stretch too big */
+  height: auto;
+  /* keep aspect ratio */
   border-radius: 12px;
   object-fit: cover;
 }
